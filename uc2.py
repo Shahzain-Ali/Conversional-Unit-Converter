@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 
 # Page configuration
-st.set_page_config(page_title="Conversational Unit Converter", page_icon="🔄")
+st.set_page_config(page_title="Conversational Unit Converter")
 
 # Simple header
 st.title("Conversational Unit Converter")
@@ -54,7 +54,7 @@ if 'from_unit' not in st.session_state or st.session_state.get('current_category
 
 with col1:
     # Value input
-    value = st.number_input("Value:", step=0.1, format="%.6f")
+    value = st.number_input("Value:", step=0.1)
 
 with col2:
     # From unit selection
